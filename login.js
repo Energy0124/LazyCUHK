@@ -90,12 +90,12 @@ function processHTML() {
         showMSG("Login is Automatically Clicked");
     } else if (pageHTML.indexOf("CUHK Wi-Fi Service - Successful Login") > 0 || pageHTML.indexOf("Wired Network Service - Successful Login") > 0) {
         //CUHK Login Success
-        runScript("window.location.href='" + redirect_url + "';");
-        showMSG("Redirecting");
+       // runScript("window.location.href='" + redirect_url + "';");
+       // showMSG("Redirecting");
     } else if (pageHTML.indexOf("剩餘時間") > 0) {
         //PCCW Login Success
-        runScript("window.location.href='" + redirect_url + "';");
-        showMSG("Redirecting");
+        //runScript("window.location.href='" + redirect_url + "';");
+        //showMSG("Redirecting");
     } else if (pageHTML.indexOf("歡迎使用csl Wi-Fi服務") > 0) {
         //PCCW Login Page
         if (wifi_stored == false) {
@@ -208,8 +208,8 @@ function processHTML() {
         showMSG("Submit is Automatically Clicked");
     } else if (pageHTML.indexOf("Thank you for using Y5ZONE FREE WiFi Service") > 0 && pageHTML.indexOf("You are now connected to the Internet") > 0) {
         //Y5Zone Login Success
-        runScript("window.location.href='" + redirect_url + "';");
-        showMSG("Redirecting");
+      //  runScript("window.location.href='" + redirect_url + "';");
+       // showMSG("Redirecting");
     }
 }
 
